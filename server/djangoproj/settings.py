@@ -16,6 +16,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+print("BASE DIR IS", BASE_DIR)
+print("os.path.join basedir to frontend/static:", os.path.join(BASE_DIR, 'frontend/static'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -61,7 +63,9 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend/static')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'frontend/static')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
