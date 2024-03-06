@@ -20,4 +20,4 @@
     - completed step 5 of week 2.  TODO: complete step 6, logout functionality
 - 3.6.2024: week 2, step 6 done.
     - NOTE: updated start.sh.  Not sure if it works yet.
-    - TODO: Complete step 6, register functionality.
+    - TODO: Complete step 6, register functionality.  Needs debugging.  Something with /register vs /registration routes, I believe.
