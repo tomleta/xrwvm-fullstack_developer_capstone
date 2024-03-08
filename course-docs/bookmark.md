@@ -21,3 +21,4 @@
 - 3.6.2024: week 2, step 6 done.
     - NOTE: updated start.sh.  Not sure if it works yet.
     - TODO: Complete step 6, register functionality.  Needs debugging.  Something with /register vs /registration routes, I believe.
+- 3.8.2024: finished week 2.  TODO: begin week 3.
