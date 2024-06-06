@@ -39,36 +39,58 @@ app.get('/', async (req, res) => {
 // Express route to fetch all reviews
 app.get('/fetchReviews', async (req, res) => {
   try {
+    // get array of reviews from the reviews Model
+    // uses mongoose find() method
     const documents = await Reviews.find();
+    // sends jsonified list of reviews
     res.json(documents);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching documents' });
+    // else send 500 error
+    res.status(500).json({ error: 'Error fetching reviews' });
   }
 });
 
 // Express route to fetch reviews by a particular dealer
 app.get('/fetchReviews/dealer/:id', async (req, res) => {
   try {
+    // query Reviews using .find with only specific dealership id.
     const documents = await Reviews.find({dealership: req.params.id});
     res.json(documents);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching documents' });
+    res.status(500).json({ error: 'Error fetching dealer-specific reviews' });
   }
 });
 
 // Express route to fetch all dealerships
 app.get('/fetchDealers', async (req, res) => {
-//Write your code here
+    try {
+        let documents = await Dealerships.find();
+        res.json(documents);
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching dealers' });
+    }
 });
 
 // Express route to fetch Dealers by a particular state
 app.get('/fetchDealers/:state', async (req, res) => {
-//Write your code here
+    let formattedState = req.params.state[0].toUpperCase();
+    formattedState += req.params.state.slice(1);
+    try {
+        let documents = await Dealerships.find({state: formattedState});
+        res.json(documents);
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching dealers by state' });
+    }
 });
 
 // Express route to fetch dealer by a particular id
 app.get('/fetchDealer/:id', async (req, res) => {
-//Write your code here
+    try {
+        let documents = await Dealerships.find({id: req.params.id});
+        res.json(documents);
+    } catch (error) {
+        res.status(500).json({error: 'Error fetching dealers by id'});
+    }
 });
 
 //Express route to insert review
