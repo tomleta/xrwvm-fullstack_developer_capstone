@@ -23,4 +23,8 @@
     - TODO: Complete step 6, register functionality.  Needs debugging.  Something with /register vs /registration routes, I believe.
 - 3.8.2024: finished week 2.  TODO: begin week 3.
 - 6.5.2024: starting module 3.
-    - TODO: implement incomplete Express endpoints in server/database/app.js.  (Step 4 of page 2.)
+    - DONE: implement incomplete Express endpoints in server/database/app.js.  (Step 4 of page 2.)
+- 6.6.2024: **every time app.js changes, need to do this:**
+    - `docker build . -t nodeapp`
+    - then did `docker-compose up`
+    - viewed and tested endpoints on port 3030
