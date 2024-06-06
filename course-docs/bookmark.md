@@ -22,3 +22,5 @@
     - NOTE: updated start.sh.  Not sure if it works yet.
     - TODO: Complete step 6, register functionality.  Needs debugging.  Something with /register vs /registration routes, I believe.
 - 3.8.2024: finished week 2.  TODO: begin week 3.
+- 6.5.2024: starting module 3.
+    - TODO: implement incomplete Express endpoints in server/database/app.js.  (Step 4 of page 2.)
