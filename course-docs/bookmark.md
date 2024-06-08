@@ -28,3 +28,5 @@
     - `docker build . -t nodeapp`
     - then did `docker-compose up`
     - viewed and tested endpoints on port 3030
+- 6.7.2024: doing CarMake and CarModel Django work
+    - page 4, step 3, "Open djangoapp/views.py, import CarMake and..."
