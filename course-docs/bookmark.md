@@ -30,3 +30,7 @@
     - viewed and tested endpoints on port 3030
 - 6.7.2024: doing CarMake and CarModel Django work
     - page 4, step 3, "Open djangoapp/views.py, import CarMake and..."
+- 6.9.2024: finished
+    - Started module 3, "Create Django Proxy Services of Backend APIs"
+    - on step 5, start code engine
+    - now on step 7, "Create Django views to get Dealers."
