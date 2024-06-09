@@ -34,3 +34,5 @@
     - Started module 3, "Create Django Proxy Services of Backend APIs"
     - on step 5, start code engine
     - now on step 7, "Create Django views to get Dealers."
+    - finished module 3.
+    - TODO: begin module 4, Dynamic pages
