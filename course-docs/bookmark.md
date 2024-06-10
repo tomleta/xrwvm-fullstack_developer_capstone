@@ -6,6 +6,7 @@
 
 - Django superuser: root, root@bestcars.com, matt12345625
     - from manage.py createsuperuser
+- regular user: matt12345, matt@bestcars.com, matt12345625
 
 ## Changelog
 
@@ -36,3 +37,6 @@
     - now on step 7, "Create Django views to get Dealers."
     - finished module 3.
     - TODO: begin module 4, Dynamic pages
+- 6.10.2024
+    - finished mod 4, step 3
+    - TODO step 4
