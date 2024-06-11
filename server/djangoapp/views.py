@@ -108,6 +108,7 @@ def get_dealer_reviews(request, dealer_id):
         if len(dealer_reviews) > 0:
             for review in dealer_reviews:
                 sentiment = analyze_review_sentiments(review['review'])
+                print(sentiment)
                 review['sentiment'] = sentiment['sentiment']
         return JsonResponse({"status":200, "dealer_reviews":dealer_reviews})
     else:

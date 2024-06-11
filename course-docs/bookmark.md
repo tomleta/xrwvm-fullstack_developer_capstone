@@ -40,3 +40,6 @@
 - 6.10.2024
     - finished mod 4, step 3
     - TODO step 4
+- 6.11.2024
+    - did everything in step 4, but something's not working with the async stuff in the component.
+    - I get an HTTP 200 after a second from the sentiment analyzer, but it doesn't ever load in the frontend.
