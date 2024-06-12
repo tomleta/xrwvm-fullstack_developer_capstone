@@ -17,7 +17,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 print("BASE DIR IS", BASE_DIR)
-print("os.path.join basedir to frontend/static:", os.path.join(BASE_DIR, 'frontend/static'))
+print("os.path.join basedir to frontend/static:",
+      os.path.join(BASE_DIR, 'frontend/static'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,17 +32,33 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost', 
-    'https://matt12345625-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
-    'https://matt12345625-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-    'https://matt12345625-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    'https://matt12345625-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    'localhost',
+    ('https://matt12345625-8000.'
+     + 'theianext-1-labs-prod-misc-tools-us-east-0'
+     + '.proxy.cognitiveclass.ai/'),
+    ('https://matt12345625-8000.'
+     + 'theianext-0-labs-prod-misc-tools-us-east-0'
+     + '.proxy.cognitiveclass.ai'),
+    ('https://matt12345625-8000.'
+     + 'theiadockernext-0-labs-prod-theiak8s-4-tor01'
+     + '.proxy.cognitiveclass.ai'),
+    ('https://matt12345625-8000.'
+     + 'theiadockernext-1-labs-prod-theiak8s-4-tor01'
+     + '.proxy.cognitiveclass.ai')
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://matt12345625-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
-    'https://matt12345625-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-    'https://matt12345625-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    'https://matt12345625-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ('https://matt12345625-8000'
+     + '.theianext-1-labs-prod-misc-tools-us-east-0'
+     + '.proxy.cognitiveclass.ai/'),
+    ('https://matt12345625-8000'
+     + '.theianext-0-labs-prod-misc-tools-us-east-0'
+     + '.proxy.cognitiveclass.ai'),
+    ('https://matt12345625-8000'
+     + '.theiadockernext-0-labs-prod-theiak8s-4-tor01'
+     + '.proxy.cognitiveclass.ai'),
+    ('https://matt12345625-8000'
+     + '.theiadockernext-1-labs-prod-theiak8s-4-tor01'
+     + '.proxy.cognitiveclass.ai')
 ]
 
 REST_FRAMEWORK = {
@@ -107,7 +124,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        ('django.contrib.auth.password_validation'
+         + '.UserAttributeSimilarityValidator'),
     },
     {
         'NAME':
@@ -156,4 +174,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-

@@ -49,3 +49,4 @@
     - bugfix: small mods to djangoapp/views.py/get_dealer_reviews.
     - finished step 4, dealer_id_reviews
     - finished step 5, post review
+    - linting...
