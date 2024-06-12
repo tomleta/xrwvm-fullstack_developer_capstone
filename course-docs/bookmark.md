@@ -43,3 +43,8 @@
 - 6.11.2024
     - did everything in step 4, but something's not working with the async stuff in the component.
     - I get an HTTP 200 after a second from the sentiment analyzer, but it doesn't ever load in the frontend.
+- 6.12.2024
+    - bugfix: changed djangoapp/urls.py, `get_dealer/<int:dealer_id>` to `dealer/<int:dealer_id>`.  didn't fix yet
+    - bugfix: changed djangoapp/urls.py, `reviews/dealer/<int>` name to `dealer_details` from `dealer_reviews`.
+    - bugfix: small mods to djangoapp/views.py/get_dealer_reviews.
+    - finished step 4, dealer_id_reviews
