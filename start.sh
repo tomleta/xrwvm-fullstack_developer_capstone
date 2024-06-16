@@ -17,6 +17,7 @@ npm run build
 # to start up the MongoDB (which holds the Dealerships and Reviews models)
 # docker build . -t nodeapp
 # docker-compose up
+# launch application on port 3030 and copy that url to .env
 
 # to start up sentiment analyzer microservice
 # run in code engine CLI
