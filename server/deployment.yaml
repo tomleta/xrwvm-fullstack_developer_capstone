@@ -20,7 +20,7 @@ spec:
         run: dealership
     spec:
       containers:
-      - image: us.icr.io/sn-labs-matt12345625/dealership:latest
+      - image: us.icr.io/tomleta/dealership:latest
         imagePullPolicy: Always
         name: dealership
         ports:
