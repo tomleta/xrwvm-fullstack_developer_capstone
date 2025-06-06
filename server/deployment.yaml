@@ -20,7 +20,7 @@ spec:
         run: dealership
     spec:
       containers:
-      - image: 
+      - image: us.icr.io/tomleta/dealership:latest
         imagePullPolicy: Always
         name: dealership
         ports:
