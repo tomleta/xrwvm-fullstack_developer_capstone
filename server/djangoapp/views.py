@@ -1,7 +1,6 @@
-from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
 from django.contrib.auth.models import User
-from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth import login, authenticate
 from django.views.decorators.csrf import csrf_exempt
 import logging
 import json
@@ -9,11 +8,9 @@ from .restapis import get_request, analyze_review_sentiments, post_review
 from populate import initiate
 from .models import CarMake, CarModel
 
-
-# Get an instance of a logger
 logger = logging.getLogger(__name__)
 
-
+@csrf_exempt
 def login_user(request):
     """Handle sign in request"""
     data = json.loads(request.body)
